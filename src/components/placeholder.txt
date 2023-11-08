@@ -1,0 +1,40 @@
+const ActionButton = styled.a`
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--button);
+  color: var(--secondary);
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 50px;
+  margin: 8px 0px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 1.15rem;
+  font-weight: 800;
+
+  transition: transform 0.8s, box-shadow 0.8s;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px var(--button);
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px; // Ensure this matches the button's border-radius
+      background: linear-gradient(white, rgba(255, 255, 255, 0));
+      background-repeat: no-repeat;
+      background-size: 4px 4px; // The size of the "tracer" effect
+      animation: ${traceBorder} 2s linear infinite;
+      box-sizing: border-box;
+      padding: 2; // Adjust for the border effect
+    }
+  }
+`;

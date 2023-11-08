@@ -1,3 +1,18 @@
+:root {
+  --bg: #242629;
+  --bg2: #16161a;
+  --divider: #242629;
+  --headline: #ddeef0;
+  --paragraph: #94a1b2;
+  --accent: #040a13;
+  --complement: #b9dde3;
+  --accent-text: #fffffe;
+  --contrast: #b62c65;
+  --secondary: #061422;
+  --icon: #2c7ca3;
+  --button: #4ba6c4;
+}
+
 .App {
   text-align: center;
 }
@@ -22,6 +37,76 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+html {
+  font-size: 16px;
+  color: var(--headline);
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 16px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 8px;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2rem;
+  margin: 4px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.5rem;
+  margin: 4px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin: 4px;
+  font-weight: 600;
+  color: var(--headline);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--paragraph);
+  font-weight: 500;
+}
+
+svg {
+  font-size: 1.75rem;
+  color: var(--accent);
+}
+
+li {
+  color: var(--paragraph);
+}
+
+body {
+  font-family: "Onest", sans-serif;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Vibes";
+  src: url("/public/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Onest";
+  src: url("/public/Onest-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
 }
 
 .App-link {
