@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled, { keyframes, css } from "styled-components";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+import Links from "./Links";
 
 const MainWrapper = styled.div`
   display: flex;
@@ -187,6 +188,7 @@ const Main = () => {
           Get Started
         </ActionButton>
       </ActionContainer>
+      <Links />
     </MainWrapper>
   );
 };
